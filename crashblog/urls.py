@@ -23,6 +23,7 @@ urlpatterns = [
     path('', frontpage, name='frontpage' ),
     path('', include('blog.urls')),
     path('about/', about, name='about' ),
-    
-
 ]
+
+admin.site.site_header = 'My Blog Site Admin'
+admin.site.site_title = 'My Blog Site'
